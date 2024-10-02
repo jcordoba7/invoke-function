@@ -6,9 +6,9 @@ from fdk import response
 def handler(ctx, data: io.BytesIO=None):
     try:
         body = json.loads(data.getvalue())
-        function_endpoint = body.get("https://ncjgmq4tscq.us-phoenix-1.functions.oci.oraclecloud.com")
-        function_ocid = body.get("ocid1.fnfunc.oc1.phx.aaaaaaaaqtmw7jyllvkqxqnb2k7yiq3evloyy5zqj7kswuqn2u62cflchaya")
-        function_body = body.get("")
+        function_endpoint = body.get("function_endpoint")
+        function_ocid = body.get("function_ocid")
+        function_body = body.get("function_body")
     except (Exception) as ex:
         print('ERROR: Missing key in payload', ex, flush=True)
         raise

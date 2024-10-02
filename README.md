@@ -41,7 +41,7 @@ the functions related compartment.
 
 Your policy should look something like this:
 ```
-Allow dynamic-group <dynamic-group-name> to use fn-invocation in compartment <compartment-name>
+Allow dynamic-group <dynamic-group-name> to use functions-family in compartment <compartment-name>
 ```
 
 For more information on how to create policies, check the [documentation](https://docs.cloud.oracle.com/iaas/Content/Identity/Concepts/policysyntax.htm).
